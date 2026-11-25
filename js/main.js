@@ -102,6 +102,7 @@ function openModal(id) {
   slidesEl.innerHTML = '';
   dotsEl.innerHTML   = '';
   totalSlides = project.images.length;
+  document.getElementById('modalSlider').style.display = totalSlides ? '' : 'none';
 
   project.images.forEach((src, i) => {
     const img = document.createElement('img');
@@ -109,15 +110,13 @@ function openModal(id) {
     img.alt   = project.title + ' screenshot ' + (i + 1);
     img.className = 'modal-slide';
     img.onerror = function () {
-      const ph = document.createElement('div');
-      ph.className = 'modal-slide-placeholder';
-      ph.innerHTML = `
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.2">
-          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-          <polyline points="21 15 16 10 5 21"/>
-        </svg>
-        <span>Screenshot ${i+1} — <code>assets/projects/</code> mein rakho</span>`;
-      slidesEl.replaceChild(ph, img);
+      img.remove();
+      if (dot) dot.remove();
+      totalSlides = slidesEl.children.length;
+      document.getElementById('modalSlider').style.display = totalSlides ? '' : 'none';
+      document.getElementById('slidePrev').style.display = totalSlides > 1 ? 'flex' : 'none';
+      document.getElementById('slideNext').style.display = totalSlides > 1 ? 'flex' : 'none';
+      goToSlide(0);
     };
     slidesEl.appendChild(img);
 
@@ -142,6 +141,7 @@ function openModal(id) {
 
   document.getElementById('modalTags').innerHTML =
     project.tags.map(t => `<span class="tag">${t}</span>`).join('');
+  addLogos(document.getElementById('modalTags'));
 
   const linksEl = document.getElementById('modalLinks');
   linksEl.innerHTML = '';
@@ -154,7 +154,7 @@ function openModal(id) {
   if (project.live) {
     const a = document.createElement('a');
     a.href = project.live; a.target = '_blank'; a.className = 'btn-primary';
-    a.innerHTML = `<i class="fas fa-external-link-alt"></i> Live Demo`;
+    a.innerHTML = `<i class="${project.liveLabel === 'Google Play' ? 'fab fa-google-play' : 'fas fa-external-link-alt'}"></i> ${project.liveLabel || 'Live Demo'}`;
     linksEl.appendChild(a);
   }
 
@@ -290,3 +290,42 @@ function closeEduModal() {
   document.getElementById('eduModalOverlay').classList.remove('active');
   document.body.style.overflow = '';
 }
+
+// =============================================
+//  KEYBOARD ACCESS: Enter / Space opens a project card
+// =============================================
+document.querySelectorAll('.project-card[role="button"]').forEach(card => {
+  card.addEventListener('keydown', (e) => {
+    if (e.target !== card) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.click();
+    }
+  });
+});
+
+
+// =============================================
+//  TECH LOGOS (Simple Icons CDN; hidden if a logo is missing)
+// =============================================
+const LOGOS = {
+  'Flutter':'flutter','Dart':'dart','Firebase':'firebase','Firestore':'firebase','Crashlytics':'firebase',
+  'Supabase':'supabase','Python':'python','Git & GitHub':'github','Google Play':'googleplay',
+  'Play Store Release':'googleplay','Android':'android','Drift':'sqlite','Drift / SQLite':'sqlite',
+  'n8n':'n8n','Gemini API':'googlegemini','Google AI Studio':'googlegemini','Hugging Face':'huggingface',
+  'OpenStreetMap':'openstreetmap','PySide6':'qt','SymPy':'sympy','Groq':'groq','Groq API':'groq','Groq AI':'groq'
+};
+function addLogos(root) {
+  (root || document).querySelectorAll('.tag, .skill-tag').forEach(el => {
+    if (el.dataset.logo) return;
+    el.dataset.logo = '1';
+    const slug = LOGOS[el.textContent.trim()];
+    if (!slug) return;
+    const img = new Image();
+    img.src = 'https://cdn.simpleicons.org/' + slug;
+    img.alt = ''; img.width = 14; img.height = 14;
+    img.onerror = () => img.remove();
+    el.prepend(img);
+  });
+}
+addLogos();

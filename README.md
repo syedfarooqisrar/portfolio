@@ -1,13 +1,13 @@
 # Syed Farooq Israr — Portfolio
 
 Personal portfolio of a Flutter developer from Karachi, Pakistan.
-Showcases Android apps, AI automation projects, experience and certifications.
+Showcases Android apps, projects and certifications.
 
 **Live:** https://farooqbuilds.vercel.app
 
 ## Tech
 - HTML5, CSS3, vanilla JavaScript (no framework, no build step)
-- Fonts: Google Fonts (Outfit, DM Sans) · Icons: Font Awesome
+- Fonts: Google Fonts (Outfit, DM Sans) · Icons: Font Awesome · Tech logos: Simple Icons
 
 ## Run locally
 1. Open the folder in VS Code
@@ -15,10 +15,20 @@ Showcases Android apps, AI automation projects, experience and certifications.
 3. Right-click `index.html` → **Open with Live Server**
 
 ## Structure
-index.html page content + project data (JSON)
-css/style.css styles
-js/main.js navigation, modals, animations
-assets/ images and documents
+```
+index.html      page content + project data (JSON block near the bottom)
+css/style.css   styles
+js/main.js      navigation, modals, animations, tech logos
+assets/         images and documents
+```
+
+## Project images
+Each project has its own folder: `assets/projects/<id>/`
+- `cover.png` — card image (Play Store feature graphic 1024x500 works best)
+- `1.png` to `6.png` — screenshots shown in the project popup
+
+Project ids: `mathpull`, `trolleyscan`, `sufra`, `decipic`, `eqstudio`.
+Missing images are skipped automatically.
 
 ## Contact
-farooqisrar2001@gmail.com · [LinkedIn](https://linkedin.com/in/syedfarooqisrar)
+farooqisrar2001@gmail.com · [LinkedIn](https://linkedin.com/in/syedfarooqisrar) · [GitHub](https://github.com/syedfarooqisrar)
