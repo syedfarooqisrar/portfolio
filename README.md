@@ -3,7 +3,7 @@
 Personal portfolio of a Flutter developer from Karachi, Pakistan.
 Showcases Android apps, projects and certifications.
 
-**Live:** https://farooqbuilds.vercel.app
+**Live:** https://syedfarooqisrar.pages.dev
 
 ## Tech
 - HTML5, CSS3, vanilla JavaScript (no framework, no build step)
