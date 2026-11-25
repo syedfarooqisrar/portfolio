@@ -1,0 +1,20 @@
+# Environment (is project mein keys nahi hain, lekin aadat achi hai)
+.env
+*.env
+
+# Personal documents: public repo mein nahi jayenge (faisla agle step mein)
+assets/edu/
+assets/degree.pdf
+
+# Use nahi ho rahi files
+assets/projects/NSCT/
+assets/m1.jpg
+
+# Backups
+index.backup.html
+js/main.backup.js
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

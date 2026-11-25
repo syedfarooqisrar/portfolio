@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Farooq Israr — AI Mobile App Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Syed <span class="blue">Farooq Israr</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="mailto:farooqisrar2001@gmail.com" class="btn-outline">Email</a>
+      <a href="https://linkedin.com/in/syedfarooqisrar" target="_blank" class="btn-primary">LinkedIn</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#home" onclick="closeMobileNav()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileNav()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobileNav()">Projects</a></li>
+      <li><a href="#education" onclick="closeMobileNav()">Education</a></li>
+      <li><a href="#certificates" onclick="closeMobileNav()">Certificates</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-left reveal-left">
+      <p class="hero-tag"><span class="tag-dot"></span>AI MOBILE APP DEVELOPER</p>
+      <h1 class="hero-name">Syed Farooq<br/><span class="blue">Israr</span></h1>
+      <p class="hero-desc">
+        Self-taught Flutter & AI Automation developer from Karachi, building intelligent mobile apps that solve real problems. Specializing in Flutter, Firebase, and AI integrations.
+      </p>
+      <div class="hero-btns">
+        <a href="https://linkedin.com/in/syedfarooqisrar" target="_blank" class="btn-primary">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:farooqisrar2001@gmail.com" class="btn-outline">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="assets/resume.pdf" download class="btn-yellow">
+          <i class="fas fa-download"></i> Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Tech Stacks</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right reveal-right">
+      <div class="hero-photo-card">
+        <img src="assets/myphoto.png" alt="Syed Farooq Israr" class="hero-photo" id="heroPhoto" />
+        <div class="hero-photo-placeholder" id="heroPlaceholder">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <p>Add your photo<br/><code>assets/myphoto.jpg</code></p>
+        </div>
+        <div class="hero-photo-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <!-- Floating tech pills -->
+        <div class="tech-pill pill-1"><i class="fas fa-mobile-alt"></i> Flutter</div>
+        <div class="tech-pill pill-2"><i class="fas fa-robot"></i> AI/n8n</div>
+        <div class="tech-pill pill-3"><i class="fas fa-fire"></i> Firebase</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <div class="about-layout">
+      <div class="about-left reveal-up">
+        <p class="section-eyebrow">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I'm a self-taught Flutter developer and AI Automation specialist based in Karachi, Pakistan. My journey into tech started independently — no formal training, just curiosity and relentless learning.
+        </p>
+        <p class="about-text">
+          Currently pursuing my BSCS at Virtual University of Pakistan, I build AI-powered mobile apps that bridge intelligent backends with smooth mobile experiences. My focus is creating real, usable products — not just demos.
+        </p>
+        <p class="about-text">
+          Previously worked as a Field Service Engineer, which gave me a strong foundation in problem-solving and working under pressure. That mindset carries directly into how I approach software development.
+        </p>
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Karachi, Pakistan</span>
+          </div>
+          <div class="about-info-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>BSCS — Virtual University</span>
+          </div>
+          <div class="about-info-item">
+            <i class="fas fa-language"></i>
+            <span>English, Urdu</span>
+          </div>
+          <div class="about-info-item">
+            <i class="fas fa-briefcase"></i>
+            <span>Open to Freelance & Jobs</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right reveal-up" style="animation-delay:.15s">
+        <div class="about-card-stack">
+          <div class="about-highlight-card">
+            <div class="about-card-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div>
+              <strong>Flutter Development</strong>
+              <p>Building production-quality Android apps with clean architecture and smooth UX.</p>
+            </div>
+          </div>
+          <div class="about-highlight-card">
+            <div class="about-card-icon"><i class="fas fa-robot"></i></div>
+            <div>
+              <strong>AI & Automation</strong>
+              <p>Integrating Groq, Claude API, n8n workflows and RAG pipelines into real products.</p>
+            </div>
+          </div>
+          <div class="about-highlight-card">
+            <div class="about-card-icon"><i class="fas fa-fire"></i></div>
+            <div>
+              <strong>Firebase & Backend</strong>
+              <p>Firebase Auth, Firestore, AdMob — full stack mobile backend experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="reveal-up">
+      <p class="section-eyebrow">What I Work With</p>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-sub">Tools and technologies I use to build production-ready mobile apps and AI systems.</p>
+    </div>
+
+    <div class="skills-grid reveal-up" style="animation-delay:.1s">
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-group-icon"><i class="fas fa-mobile-alt"></i></span>
+          <h3>Mobile Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--primary">Flutter</span>
+          <span class="skill-tag skill-tag--primary">Dart</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Android</span>
+          <span class="skill-tag">iOS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-group-icon"><i class="fas fa-robot"></i></span>
+          <h3>AI & Automation</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--primary">n8n</span>
+          <span class="skill-tag skill-tag--primary">Groq API</span>
+          <span class="skill-tag">Claude API</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">LLM Integration</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-group-icon"><i class="fas fa-fire"></i></span>
+          <h3>Backend & Database</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--primary">Firebase</span>
+          <span class="skill-tag skill-tag--primary">Firestore</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">AdMob</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-group-icon"><i class="fas fa-tools"></i></span>
+          <h3>Tools & Other</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--primary">Git & GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section">
+    <div class="reveal-up">
+      <p class="section-eyebrow">What I've Built</p>
+      <h2 class="section-title">Highlighted Projects</h2>
+      <p class="section-sub">Production work across booking, e-commerce, logistics, payments and AI automation.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up" style="animation-delay:.05s" onclick="openModal('p1')">
+        <div class="project-card-top">
+          <span class="project-icon"><i class="fas fa-cut"></i></span>
+          <span class="card-view-hint">View Details →</span>
+        </div>
+        <h3 style="display:flex;align-items:center;gap:10px;">
+          Barbar Appointment
+          <span style="font-size:10.5px;font-weight:700;background:#e8f0fe;color:#1a73e8;border-radius:4px;padding:2px 8px;letter-spacing:.4px;text-transform:uppercase;">
+          In Progress
+          </span>
+        </h3>
+        <p>Production-grade appointment booking with time-slot management, push notifications, and secure authentication.</p>
+        <div class="tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Push Notifications</span>
+        </div>
+      </div>
+      <div class="project-card reveal-up" style="animation-delay:.10s" onclick="openModal('p2')">
+        <div class="project-card-top">
+          <span class="project-icon"><i class="fas fa-shopping-bag"></i></span>
+          <span class="card-view-hint">View Details →</span>
+        </div>
+        <h3>HealthGuard AI</h3>
+        <p>AI-powered health companion built with Google AI Studio & Gemini API. Symptom checker, medicine scanner, mental health support & emergency first aid — in Urdu & English.</p>
+        <div class="tags">
+          <span class="tag">Gemini API</span>
+          <span class="tag">Google AI Studio</span>
+        </div>
+      </div>
+ 
+      <div class="project-card reveal-up" style="animation-delay:.15s" onclick="openModal('p3')">
+        <div class="project-card-top">
+          <span class="project-icon"><i class="fas fa-utensils"></i></span>
+          <span class="card-view-hint">View Details →</span>
+        </div>
+
+        <h3>Restaurant AI Agent with RAG</h3>
+        <p>building a highly efficient Restaurant AI Agent using a RAG (Retrieval-Augmented Generation) architecture.
+           Instead of just "chatting," this bot retrieves real-time data from a menu database to provide accurate,
+            hallucination-free answers.</p>
+        <div class="tags">
+          <span class="tag">N8N</span>
+          <span class="tag">Groq AI</span>
+          <span class="tag">Supabase vector store</span>
+          <span class="tag">Hugging Face</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="animation-delay:.15s" onclick="openModal('p4')">
+        <div class="project-card-top">
+          <span class="project-icon"><i class="fas fa-football-ball"></i></span>
+          <span class="card-view-hint">View Details →</span>
+        </div>
+        <h3>Customer Experience Automation 🛠️</h3>
+        <p>I built an AI-Powered Customer Experience Suite that ensures no feedback—whether it’s a glowing compliment or an urgent complaint—ever goes unnoticed</p>
+        <div class="tags">
+          <span class="tag">N8N</span>
+          <span class="tag">Groq AI</span>
+          <span class="tag">Gmail</span>
+          <span class="tag">Slack</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="animation-delay:.20s" onclick="openModal('p5')">
+        <div class="project-card-top">
+          <span class="project-icon"><i class="fas fa-hotel"></i></span>
+          <span class="card-view-hint">View Details →</span>
+        </div>
+        <h3>Automating Lead Categorization</h3>
+        <p>I've been experimenting with n8n to streamline the
+            sales process The goal? To never let a high-ticket
+            inquiry sit unanswered.</p>
+        <div class="tags">
+          <span class="tag">N8N</span>
+          <span class="tag">Groq AI</span>
+          <span class="tag">Gmail</span>
+          <span class="tag">Slack</span>
+          <span class="tag">Google Sheet</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="animation-delay:.25s" onclick="openModal('p6')">
+        <div class="project-card-top">
+          <span class="project-icon"><i class="fas fa-money-bill-wave"></i></span>
+          <span class="card-view-hint">View Details →</span>
+        </div>
+        <h3>AI Email Command Center</h3>
+        <p>This project is a sophisticated Automated Email Management System that acts as a 24/7 digital triage officer.</p>
+        <div class="tags">
+          <span class="tag">N8N</span>
+          <span class="tag">Groq AI</span>
+          <span class="tag">Gmail</span>
+          <span class="tag">Google Sheet</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section">
+    <div class="reveal-up">
+      <p class="section-eyebrow">My Background</p>
+      <h2 class="section-title">Education</h2>
+      <p class="section-sub">Academic qualifications. Click any entry to view documents.</p>
+    </div>
+
+    <div class="edu-layout reveal-up" style="animation-delay:.1s">
+      <div class="edu-timeline">
+
+        <div class="edu-entry" onclick="openEduModal('vu')">
+          <div class="edu-year-col"><span class="edu-year">2026 — Present</span></div>
+          <div class="edu-connector">
+            <div class="edu-dot edu-dot--active"></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card edu-card--active">
+            <div class="edu-card-header">
+              <div>
+                <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+                <p class="edu-institution">Virtual University of Pakistan &nbsp;·&nbsp; Karachi</p>
+              </div>
+              <span class="edu-badge edu-badge--current">Current</span>
+            </div>
+            <p class="edu-desc">Currently enrolled in BSCS program, focusing on software engineering, data structures, algorithms, and modern computing fundamentals.</p>
+            <div class="edu-meta">
+              <span class="edu-meta-tag"><i class="fas fa-graduation-cap"></i> BSCS</span>
+              <span class="edu-meta-tag"><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</span>
+            </div>
+            <span class="edu-view-hint">View Documents →</span>
+          </div>
+        </div>
+
+        <div class="edu-entry" onclick="openEduModal('inter')">
+          <div class="edu-year-col"><span class="edu-year">2018 — 2020</span></div>
+          <div class="edu-connector">
+            <div class="edu-dot edu-dot--done"></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div>
+                <h3 class="edu-degree">Intermediate — Pre-Engineering</h3>
+                <p class="edu-institution">Board of Intermediate Education Karachi (BIEK)</p>
+              </div>
+              <span class="edu-badge edu-badge--done">Completed</span>
+            </div>
+            <p class="edu-desc">Completed Intermediate with Pre-Engineering group, building strong foundations in Mathematics, Physics, and Chemistry.</p>
+            <div class="edu-meta">
+              <span class="edu-meta-tag"><i class="fas fa-book"></i> Pre-Engineering</span>
+              <span class="edu-meta-tag"><i class="fas fa-map-marker-alt"></i> Karachi</span>
+            </div>
+            <span class="edu-view-hint">View Certificate →</span>
+          </div>
+        </div>
+
+        <div class="edu-entry edu-entry--last" onclick="openEduModal('matric')">
+          <div class="edu-year-col"><span class="edu-year">2017 — 2018</span></div>
+          <div class="edu-connector">
+            <div class="edu-dot edu-dot--done"></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div>
+                <h3 class="edu-degree">Matriculation — Science</h3>
+                <p class="edu-institution">Board of Secondary Education Karachi (BSEK)</p>
+              </div>
+              <span class="edu-badge edu-badge--done">Completed</span>
+            </div>
+            <p class="edu-desc">Completed SSC with Science group. Developed core analytical and problem-solving skills during secondary education.</p>
+            <div class="edu-meta">
+              <span class="edu-meta-tag"><i class="fas fa-book"></i> Science Group</span>
+              <span class="edu-meta-tag"><i class="fas fa-map-marker-alt"></i> Karachi</span>
+            </div>
+            <span class="edu-view-hint">View Certificate →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION MODAL ===== -->
+  <div class="modal-overlay" id="eduModalOverlay" onclick="closeEduModal()">
+    <div class="modal-box edu-modal-box" id="eduModalBox" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeEduModal()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="edu-modal-header" id="eduModalHeader">
+        <div class="edu-modal-icon" id="eduModalIcon"></div>
+        <div>
+          <h2 class="edu-modal-title" id="eduModalTitle"></h2>
+          <p class="edu-modal-sub" id="eduModalSub"></p>
+        </div>
+      </div>
+      <div class="edu-modal-tabs" id="eduModalTabs"></div>
+      <div class="edu-modal-viewer" id="eduModalViewer">
+        <div class="edu-doc-preview" id="eduDocPreview"></div>
+        <div class="edu-doc-actions" id="eduDocActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section id="certificates" class="section">
+    <div class="reveal-up">
+      <p class="section-eyebrow">Verified Learning</p>
+      <h2 class="section-title">Certificates</h2>
+      <p class="section-sub">Completed courses and certifications from industry-leading platforms.</p>
+    </div>
+ 
+    <div class="cert-grid">
+
+      <div class="cert-card reveal-up" style="animation-delay:.05s">
+        <div class="cert-img-wrap">
+          <img src="assets/hec_cert.jpg" alt="QuickStart From Algorithm Design to Working" />
+          <a href="assets/hec_cert.jpg" target="_blank" class="cert-open-btn" title="Open Certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">QuickStart From Algorithm Design to Working</h3>
+          <span class="cert-issuer cert-issuer--google">
+            <i class="fas fa-award"></i> HEC Pakistan
+          </span>
+          <span class="cert-year">2026</span>
+        </div>
+      </div>
+
+       <div class="cert-card reveal-up" style="animation-delay:.05s">
+        <div class="cert-img-wrap">
+          <img src="assets/digi_cert.jpg" alt="FREELANCING" />
+          <a href="assets/digi_cert.jpg" target="_blank" class="cert-open-btn" title="Open Certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">Freelancing</h3>
+          <span class="cert-issuer cert-issuer--google">
+            <i class="fas fa-certificate"></i> DIGISKILL
+          </span>
+          <span class="cert-year">2026</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up" style="animation-delay:.05s">
+        <div class="cert-img-wrap">
+          <img src="assets/google_cert2.jpg" alt="Maximize Productivity With AI Tools" />
+          <a href="assets/google_cert2.jpg" target="_blank" class="cert-open-btn" title="Open Certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">Maximize Productivity With AI Tools</h3>
+          <span class="cert-issuer cert-issuer--google">
+            <i class="fab fa-google"></i> GOOGLE
+          </span>
+          <span class="cert-year">2026</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up" style="animation-delay:.05s">
+        <div class="cert-img-wrap">
+          <img src="assets/cert1.jpeg" alt="Introduction to AI by Google" />
+          <a href="assets/cert1.jpeg" target="_blank" class="cert-open-btn" title="Open Certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">Introduction to AI</h3>
+          <span class="cert-issuer cert-issuer--google">
+            <i class="fab fa-google"></i> Google
+          </span>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+ 
+      <div class="cert-card reveal-up" style="animation-delay:.10s">
+        <div class="cert-img-wrap">
+          <img src="assets/cert2.jpeg" alt="Gen AI: Beyond the Chatbot by Google Cloud" />
+          <a href="assets/cert2.jpeg" target="_blank" class="cert-open-btn" title="Open Certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">Gen AI: Beyond the Chatbot</h3>
+          <span class="cert-issuer cert-issuer--google">
+            <i class="fab fa-google"></i> Google Cloud
+          </span>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+ 
+      <div class="cert-card reveal-up" style="animation-delay:.15s">
+        <div class="cert-img-wrap">
+          <img src="assets/cert3.jpeg" alt="AI & Automation Fundamentals by IBM" />
+          <a href="assets/cert3.jpeg" target="_blank" class="cert-open-btn" title="Open Certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">AI & Automation Fundamentals</h3>
+          <span class="cert-issuer cert-issuer--ibm">
+            <i class="fas fa-cube"></i> IBM
+          </span>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section">
+  <div class="contact-wrapper">
+    
+    <!-- Left Side: Heading & Info -->
+    <div class="contact-info-side">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">Let's build something<br>great together.</h2>
+      <p class="section-sub">I'm currently available for freelance projects and full-time opportunities. Reach out if you have a question or just want to say hi!</p>
+      
+      <div class="contact-status-box">
+        <div class="status-dot"></div>
+        <span>Available for new projects</span>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Methods -->
+    <div class="contact-methods-side">
+      
+      <!-- Email Card -->
+      <a href="mailto:farooqisrar2001@gmail.com" class="method-card">
+        <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+        <div class="method-detail">
+          <strong>Email Me</strong>
+          <span>farooqisrar2001@gmail.com</span>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow"></i>
+      </a>
+
+      <!-- Phone Card -->
+      <a href="tel:+923020200689" class="method-card">
+        <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="method-detail">
+          <strong>Call or SMS</strong>
+          <span>+92 302 0200689</span>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow"></i>
+      </a>
+
+      <!-- Social Links Row -->
+      <div class="social-pills-row">
+        <a href="https://linkedin.com/in/syedfarooqisrar" target="_blank" class="social-pill linkedin">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://github.com/farooqisrar" target="_blank" class="social-pill github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://wa.me/923020200689" target="_blank" class="social-pill whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://facebook.com/farooqailab" target="_blank" class="social-pill facebook">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <span>© 2026 Syed Farooq Israr — AI Mobile App Developer</span>
+    <div class="footer-links">
+      <a href="tel:+923020200689">+92 302 0200689</a>
+      <a href="mailto:farooqisrar2001@gmail.com">farooqisrar2001@gmail.com</a>
+      <a href="https://linkedin.com/in/syedfarooqisrar" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923020200689" class="floating-btn" target="_blank">
+    <i class="fab fa-whatsapp" style="color:white;font-size:24px;"></i>
+  </a>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" id="modalBox" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-slider" id="modalSlider">
+        <div class="modal-slides" id="modalSlides"></div>
+        <button class="slide-btn slide-prev" id="slidePrev" onclick="changeSlide(-1)">&#8249;</button>
+        <button class="slide-btn slide-next" id="slideNext" onclick="changeSlide(1)">&#8250;</button>
+        <div class="slide-dots" id="slideDots"></div>
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-features" id="modalFeatures"></div>
+        <div class="modal-footer">
+          <div class="modal-tags" id="modalTags"></div>
+          <div class="modal-links" id="modalLinks"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DATA -->
+  <script id="project-data" type="application/json">
+  {
+    "p1": {
+      "title": "Barbar Appointment",
+      "desc": "A production-grade appointment booking app with time-slot management, push notifications, and secure authentication. Built for high concurrency and reliability.",
+      "images": ["assets/projects/barbar1.jpg","assets/projects/barbar2.png","assets/projects/barbar3.jpg"],
+      "features": ["Real-time time-slot booking with conflict prevention","Push notifications for appointment reminders","Firebase Authentication — secure login & signup","Admin panel to manage barbers & availability","Booking history & cancellation flows"],
+      "tags": ["React Native", "Firebase", "Push Notifications"],
+      "github": "https://github.com/YOUR-USERNAME/barbar-appointment",
+      "live": ""
+    },
+     "p2": {
+      "title": "HealthGuard AI",
+      "desc": "An AI-powered health companion built in Karachi, Pakistan 🇵🇰 using Google AI Studio and Gemini API. Built for AI Seekho 2026 — proof that powerful AI solutions can be built from anywhere with the right tools and vision.",
+      "images": ["assets/projects/p2_1.png","assets/projects/p2_2.png","assets/projects/p2_3.png","assets/projects/p2_4.png","assets/projects/p2_5.png","assets/projects/p2_6.png","assets/projects/p2_7.png","assets/projects/p2_8.png"],
+      "features": ["🩺 Symptom Checker — describe how you feel in Urdu or English, get instant AI health guidance","💊 Medicine Scanner — photo lao, AI ingredients aur side effects Urdu mein batata hai","🧠 Mental Health Support — daily mood tracking with AI coping strategies, completely anonymous","🚨 Emergency First Aid — step by step guidance that can literally save lives"],
+      "tags": ["Gemini API", "Google AI Studio"],
+      "github": "",
+      "live": "https://lnkd.in/d2kTGgsW"
+    },
+    "p3": {
+      "title": "Restaurant AI Agent with RAG",
+      "desc": "This setup ensures the AI actually knows the menu, dietary restrictions, and prices before it speaks. The era of generic chatbots is over; context-aware AI is the future! 🚀",
+      "images": ["assets/projects/p3_1.webp","assets/projects/p3_2.webp","assets/projects/p3_3.webp","assets/projects/p3_4.webp","assets/projects/p3_5.webp"],
+      "features": ["Inference: Groq (for near-instant response times)","Vector Store: Supabase (storing menu embeddings)","Embeddings: HuggingFace Models","Orchestration: LangFlow-style visual builder"],
+      "tags": ["N8N", "Groq AI", "Supabase vector store", "Hugging Face"],
+      "github": "https://github.com/YOUR-USERNAME/le224-ecommerce",
+      "live": ""
+    },
+    "p4": {
+      "title": "Customer Experience Automation 🛠️",
+      "desc": "The result? Reduced churn, happier customers, and a support team that only focuses on what matters. 🤖✨",
+      "images": ["assets/projects/p4_1.png","assets/projects/p4_2.png","assets/projects/p4_3.png","assets/projects/p4_4.png"],
+      "features": ["Instantly Categorizes: AI identifies the intent (Complain, Request, or Compliment).","Prioritizes Urgency: High-priority issues (like late deliveries) are flagged for immediate manager attention.","Automates Personalized Responses: Customers get human-like, contextual replies in seconds, not hours.","Centralizes Data: Every interaction is logged for long-term product strategy."],
+      "tags": ["N8N", "Groq  AI", "Gmail", "Slack"],
+      "github": "https://github.com/YOUR-USERNAME/flag-football",
+      "live": ""
+    },
+    "p5": {
+      "title": "Automating Lead Categorization",
+      "desc": "The best part? This runs 24/7 without a single manual click.🛠️✨",
+      "images": ["assets/projects/p5_1.webp"],
+      "features": ["Data flows from Google Sheets","Groq Al interprets the context of the inquiry","The system automatically categorizes the lead and alerts the team via Slack."],
+      "tags": ["N8N", "Groq AI", "Gmail", "Slack", "Google Sheet"],
+      "github": "https://github.com/YOUR-USERNAME/hotel-appointment",
+      "live": ""
+    },
+    "p6": {
+      "title": "AI Email Command Center",
+      "desc": "This system uses Large Language Models (LLMs) to understand the 'intent' of every incoming email and route it to the correct department with an automated response and data log.",
+      "images": ["assets/projects/p6_1.webp"],
+      "features": ["Gmail Trigger: The system monitors an inbox for incoming messages in real-time.","AI Text Classifier: Using Groq, the system reads the email and classifies it into one of three categories: New Order, Complaint, or Payment Received.","Dynamic Routing: Depending on the category: New Orders, Complaints, Payments"],
+      "tags": ["N8N", "Groq AI", "Gmail API", "Google Sheet"],
+      "github": "https://github.com/YOUR-USERNAME/payroll-system",
+      "live": ""
+    }
+  }
+  </script>
+
+  <!-- EDUCATION DATA -->
+  <script id="edu-data" type="application/json">
+  {
+    "vu": {
+      "title": "BSCS — Virtual University of Pakistan",
+      "sub": "2023 — Present · Karachi, Pakistan",
+      "icon": "fas fa-university",
+      "docs": [
+        {
+          "label": "Enrollment Letter",
+          "type": "pdf",
+          "file": "assets/edu/vu_enrollment.pdf",
+          "badge": "PDF"
+        }
+      ]
+    },
+    "inter": {
+      "title": "Intermediate — BIEK Karachi",
+      "sub": "2019 — 2021 · Board of Intermediate Education Karachi",
+      "icon": "fas fa-scroll",
+      "docs": [
+        {
+          "label": "Certificate",
+          "type": "image",
+          "file": "assets/edu/inter_certificate.jpg",
+          "badge": "IMAGE"
+        }
+      ]
+    },
+    "matric": {
+      "title": "Matric — BSEK Karachi",
+      "sub": "2017 — 2019 · Board of Secondary Education Karachi",
+      "icon": "fas fa-school",
+      "docs": [
+        {
+          "label": "Certificate",
+          "type": "image",
+          "file": "assets/edu/matric_certificate.jpg",
+          "badge": "IMAGE"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
